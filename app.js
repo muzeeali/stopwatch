@@ -2,7 +2,6 @@ var snd;
 var msec=0;
 var sec=0;
 var min=0;
-
 var msech=document.getElementById("msec");
 var sech=document.getElementById("sec");
 var minh=document.getElementById("min");
@@ -46,18 +45,15 @@ function pause(){
 }
 function hist(){
   
-  var histd=document.getElementById("histd")
-  var mins=min;
-  var secs=sec;
-  var msecs=msec;
-  var newhist= histd.innerHTML= mins + " : " + secs + " : " + msecs + "<br>"
-   return newhist;
+    var histd=document.getElementById("histd")
+    histd.innerHTML +=min + " : " + sec + " : " + msec + "<br>"
+   histd.className="history"
 
 }
 function histc(){
-   var histd=document.getElementById("histd")
-   histd.innerHTML=""
-   
+    var histd=document.getElementById("histd")
+    histd.innerHTML=""
+    histd.className=" "
 }
 function reset(){
     document.getElementById("startb").disabled=false;
