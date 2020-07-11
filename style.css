@@ -1,7 +1,7 @@
 body{
-  background-image: url("images/download.jpg");
+  background-image: url("images/download.jpg" );
   background-repeat: no-repeat;
-background-size: cover;
+background-size: 1200px;
   text-align: center;
 margin-top: 100px;
 }
