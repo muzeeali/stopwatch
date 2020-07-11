@@ -46,7 +46,10 @@ function pause(){
 function hist(){
   
     var histd=document.getElementById("histd")
-    histd.innerHTML=min + " : " + sec + " : " + msec + "<br>"
+Var mins=min;
+Var secs=sec;
+Var msecs=msec
+    histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
    
 
 }
