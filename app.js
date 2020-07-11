@@ -46,6 +46,9 @@ function pause(){
 function hist(){
   
   var histd=document.getElementById("histd")
+  var mins=min;
+  var secs=sec;
+  var msecs=msec;
    histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
    
 
