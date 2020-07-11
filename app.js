@@ -1,4 +1,4 @@
-
+var snd;
 var msec=0;
 var sec=0;
 var min=0;
@@ -22,19 +22,39 @@ else if(sec>=60){
     sec=0;
     }
 }
-
+function soundstart(){
+    snd= new Audio ("images/sound.mp3")
+    snd.loop=true;
+    snd.play();
+    snd.currentTime=0;
+}
+function soundpause(){
+    snd.pause();
+}
 
 function start(){
-   
+
 interval= setInterval(time,10)
 document.getElementById("startb").disabled=true;
-
+soundstart();
 }
 function pause(){
    clearInterval(interval);
    document.getElementById("startb").disabled=false;
+   soundpause()
 }
+function hist(){
+  
+    var histd=document.getElementById("histd")
+    histd.innerHTML=min + " : " + sec + " : " + msec + "<br>"
+   
 
+}
+function histc(){
+    var histd=document.getElementById("histd")
+    histd.innerHTML=""
+   
+}
 function reset(){
     document.getElementById("startb").disabled=false;
     clearInterval(interval)
@@ -44,5 +64,6 @@ function reset(){
     msech.innerHTML=msec;
     sech.innerHTML=sec;
     minh.innerHTML=min;
-  
+   histc()
+   soundpause()
  }
