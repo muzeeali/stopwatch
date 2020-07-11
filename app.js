@@ -43,16 +43,13 @@ function pause(){
    document.getElementById("startb").disabled=false;
    soundpause()
 }
-function hist(){
+//function hist(){
   
-    var histd=document.getElementById("histd")
-Var mins=min;
-Var secs=sec;
-Var msecs=msec;
-    histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
+ // var histd=document.getElementById("histd")
+  //  histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
    
 
-}
+//}
 function histc(){
     var histd=document.getElementById("histd")
     histd.innerHTML=""
