@@ -1,7 +1,7 @@
 body{
   background-image: url("images/download.jpg");
   background-repeat: no-repeat;
-
+background-size: auto;
   text-align: center;
 margin-top: 100px;
 }
@@ -59,9 +59,7 @@ button{
 
 @media only screen and (max-width: 500px)
 {
- body{
-   background-size: 500px;
- }
+
   h1{
       color: white;
       font-size: 3em;
