@@ -64,6 +64,6 @@ function reset(){
     msech.innerHTML=msec;
     sech.innerHTML=sec;
     minh.innerHTML=min;
-  // histc()
+   histc()
    soundpause()
  }
