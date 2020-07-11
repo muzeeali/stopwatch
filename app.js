@@ -43,18 +43,18 @@ function pause(){
    document.getElementById("startb").disabled=false;
    soundpause()
 }
-//function hist(){
+function hist(){
   
- // var histd=document.getElementById("histd")
-  //  histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
+  var histd=document.getElementById("histd")
+   histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
    
 
-//}
-function histc(){
-    var histd=document.getElementById("histd")
-    histd.innerHTML=""
-   
 }
+//function histc(){
+   // var histd=document.getElementById("histd")
+ //   histd.innerHTML=""
+   
+//}
 function reset(){
     document.getElementById("startb").disabled=false;
     clearInterval(interval)
@@ -64,6 +64,6 @@ function reset(){
     msech.innerHTML=msec;
     sech.innerHTML=sec;
     minh.innerHTML=min;
-   histc()
+  // histc()
    soundpause()
  }
