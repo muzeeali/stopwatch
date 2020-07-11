@@ -59,6 +59,9 @@ button{
 
 @media only screen and (max-width: 500px)
 {
+  body{
+    background-size: 500px;
+  }
   h1{
       color: white;
       font-size: 3em;
@@ -80,9 +83,7 @@ button{
        
   }
      
-  body{
-    background-size: 500px;
-  }
+
 }
 
 p{
