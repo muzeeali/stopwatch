@@ -49,9 +49,9 @@ function hist(){
   var histd=document.getElementById("histd")
   var mins=min;
   var secs=sec;
- var msecs=msec;
-   histd.innerHTML= mins + " : " + secs + " : " + msecs + "<br>"
-   
+  var msecs=msec;
+  var newhist= histd.innerHTML= mins + " : " + secs + " : " + msecs + "<br>"
+   return newhist;
 
 }
 function histc(){
