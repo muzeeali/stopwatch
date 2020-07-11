@@ -50,11 +50,11 @@ function hist(){
    
 
 }
-//function histc(){
-   // var histd=document.getElementById("histd")
- //   histd.innerHTML=""
+function histc(){
+   var histd=document.getElementById("histd")
+   histd.innerHTML=""
    
-//}
+}
 function reset(){
     document.getElementById("startb").disabled=false;
     clearInterval(interval)
