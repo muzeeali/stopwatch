@@ -48,7 +48,7 @@ function hist(){
     var histd=document.getElementById("histd")
 Var mins=min;
 Var secs=sec;
-Var msecs=msec
+Var msecs=msec;
     histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
    
 
