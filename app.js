@@ -2,6 +2,9 @@ var snd;
 var msec=0;
 var sec=0;
 var min=0;
+var mins;
+var secs;
+var msecs;
 var msech=document.getElementById("msec");
 var sech=document.getElementById("sec");
 var minh=document.getElementById("min");
@@ -46,10 +49,10 @@ function pause(){
 function hist(){
   
   var histd=document.getElementById("histd")
-  var mins=min;
-  var secs=sec;
-  var msecs=msec;
-   histd.innerHTML=mins + " : " + secs + " : " + msecs + "<br>"
+   mins=min;
+   secs=sec;
+  msecs=msec;
+   histd.innerHTML= mins + " : " + secs + " : " + msecs + "<br>"
    
 
 }
